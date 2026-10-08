@@ -102,3 +102,8 @@
     @apply font-sans;
   }
 }
+
+@utility icon-blue {
+  filter: invert(17.6%) sepia(23.7%) saturate(4127%) hue-rotate(229.2deg)
+    brightness(132%) contrast(142.7%);
+}
