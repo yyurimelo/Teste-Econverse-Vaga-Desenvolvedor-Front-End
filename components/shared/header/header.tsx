@@ -25,6 +25,13 @@ export function Header() {
             />
 
             <div className="flex shrink-0 items-center gap-6 text-muted-foreground md:order-3 md:justify-self-end">
+              <Image
+                src="/icons/box-arrow.svg"
+                alt=""
+                width={24}
+                height={24}
+                className="h-6 w-6"
+              />
               <HeartIcon size={28} />
               <UserCircleIcon size={28} />
               <ShoppingCartIcon size={28} />
