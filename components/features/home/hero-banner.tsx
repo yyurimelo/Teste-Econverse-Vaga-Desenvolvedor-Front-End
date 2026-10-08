@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
+import { Container } from "@/components/ui/container";
 
 export function HeroBanner() {
   return (
@@ -15,7 +16,7 @@ export function HeroBanner() {
 
       <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/40 to-transparent" />
 
-      <div className="relative mx-auto flex h-full w-full max-w-[1280px] flex-col justify-center gap-3 px-2 py-12 md:gap-4">
+      <Container className="relative flex h-full flex-col justify-center gap-3 px-2 py-12 md:gap-4 md:px-2">
         <h2 className="max-w-3xl text-3xl font-semibold leading-[1.15] text-white md:text-6xl">
           Venha conhecer nossas
           promoções
@@ -31,7 +32,7 @@ export function HeroBanner() {
             Ver produto
           </Button>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

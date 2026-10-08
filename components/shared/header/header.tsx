@@ -5,12 +5,14 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
+import { Container } from "@/components/ui/container";
+
 import { Navigation, SearchBar, TopBar } from "./index";
 
 export function Header() {
   return (
     <header className="bg-card">
-      <div className="mx-auto flex max-w-[1280px] flex-col gap-3">
+      <Container className="flex flex-col gap-3">
         <TopBar />
 
         <div className="flex flex-col gap-3 px-2 md:grid md:grid-cols-[1fr_minmax(0,50%)_1fr] md:items-center md:gap-8">
@@ -44,7 +46,7 @@ export function Header() {
         </div>
 
         <Navigation />
-      </div>
+      </Container>
     </header>
   );
 }
