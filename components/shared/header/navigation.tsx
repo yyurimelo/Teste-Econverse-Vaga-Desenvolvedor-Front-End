@@ -38,7 +38,7 @@ export function Navigation() {
   const [active, setActive] = useState(defaultActive);
 
   return (
-    <nav className="flex h-11 items-center gap-6 overflow-x-auto border-t px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:justify-center md:gap-16 md:overflow-x-visible md:px-0">
+    <nav className="flex h-11 items-center gap-6 overflow-x-auto border-t px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden xl:justify-center xl:gap-16 xl:overflow-x-visible xl:px-0">
       {navigationItems.map(({ label, icon: Icon }) => {
         const isActive = active === label;
 
