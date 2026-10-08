@@ -10,7 +10,7 @@ type ProductCardProps = {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-lg bg-white p-3 shadow-[0_2px_8px_rgba(0,0,0,0.15)]">
+    <article className="flex flex-col overflow-hidden rounded-lg p-3 shadow-[0_2px_8px_rgba(0,0,0,0.15)]">
       <div className="relative aspect-square">
         <Image
           src={product.photo}
@@ -28,7 +28,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
         <div className="mt-3">
           <span className="block text-muted-foreground line-through">
-            R$ 30,90
+            {formatPrice(product.price * 1.2)}
           </span>
 
           <span className="block text-xl font-bold text-card-foreground">
@@ -36,7 +36,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </span>
 
           <span className="block text-sm text-card-foreground">
-            ou 2x R$ 14,95 sem juros
+            ou 2x {formatPrice(product.price / 2)} sem juros
           </span>
 
           <span className="mt-2 block text-sm text-accent font-medium">
