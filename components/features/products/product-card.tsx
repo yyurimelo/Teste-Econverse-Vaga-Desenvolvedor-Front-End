@@ -10,7 +10,7 @@ type ProductCardProps = {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-lg bg-white p-3 shadow-xl">
+    <article className="flex flex-col overflow-hidden rounded-lg bg-white p-3 shadow-[0_2px_8px_rgba(0,0,0,0.15)]">
       <div className="relative aspect-square">
         <Image
           src={product.photo}
